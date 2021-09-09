@@ -28,7 +28,14 @@ export const styles = StyleSheet.create({
         paddingVertical: 20,
     },
 
-    mySkillsLength: {
+    greeting: {
+        color: '#fff',
+        fontSize: 18,
+        paddingVertical: 4,
+        marginLeft: 8,
+    },
+
+    mySkillsCount: {
         color: '#fff',
         fontSize: 18,
         paddingVertical: 4,
