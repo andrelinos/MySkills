@@ -34,7 +34,7 @@ export function Home() {
         if (!data.name) {
             Alert.alert(
                 'Hey There!',
-                'Please enter a new skill',
+                'Please enter a new skill.',
                 [
                     {
                         text: 'Ok',
