@@ -6,7 +6,11 @@ import { Home } from './src/pages/Home';
 export default function App() {
     return (
         <>
-            <StatusBar barStyle="light-content" />
+            <StatusBar
+                animated={true}
+                backgroundColor="#121016"
+                barStyle="light-content"
+            />
             <Home />
         </>
     );

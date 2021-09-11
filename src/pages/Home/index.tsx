@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import {
+    Alert,
     View,
     Text,
     SafeAreaView,
@@ -30,13 +31,46 @@ export function Home() {
             name: newSkill,
         };
 
-        setMySkills((oldSkills) => [...oldSkills, data]);
-        setNewSkill('');
+        if (!data.name) {
+            Alert.alert(
+                'Hey There!',
+                'Please enter a new skill',
+                [
+                    {
+                        text: 'Ok',
+                    },
+                ],
+                {
+                    cancelable: true,
+                },
+            );
+        } else {
+            setMySkills((oldSkills) => [...oldSkills, data]);
+            setNewSkill('');
+        }
     }
 
-    function handleRemoveSkill(id: string) {
-        setMySkills((oldSkills) =>
-            oldSkills.filter((skill) => skill.id !== id),
+    function handleRemoveSkill(id: string, name: string) {
+        Alert.alert(
+            'Hey There!',
+            `Want to remove "${name}" from your list?`,
+            [
+                {
+                    text: 'Yes',
+                    onPress: () => {
+                        setMySkills((oldSkills) =>
+                            oldSkills.filter((skill) => skill.id !== id),
+                        );
+                    },
+                },
+                {
+                    text: 'No',
+                    style: 'cancel',
+                },
+            ],
+            {
+                cancelable: true,
+            },
         );
     }
 
@@ -70,7 +104,7 @@ export function Home() {
 
             <View style={styles.mySkillsTitle}>
                 <Text style={styles.title}>My Skills</Text>
-                <Text style={styles.mySkillsCount}> ({mySkills.length})</Text>
+                <Text style={styles.mySkillsCount}>({mySkills.length})</Text>
             </View>
             <FlatList
                 showsVerticalScrollIndicator={false}
@@ -82,7 +116,9 @@ export function Home() {
                         <SkillCard skill={item.name} />
                         <TouchableOpacity
                             style={styles.buttonRemoveSkill}
-                            onPress={() => handleRemoveSkill(item.id)}>
+                            onPress={() =>
+                                handleRemoveSkill(item.id, item.name)
+                            }>
                             <Text style={styles.removeSkill}>-</Text>
                         </TouchableOpacity>
                     </View>

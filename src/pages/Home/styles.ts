@@ -29,10 +29,11 @@ export const styles = StyleSheet.create({
     },
 
     greeting: {
-        color: '#fff',
+        color: '#4cd137',
         fontSize: 18,
         paddingVertical: 4,
         marginLeft: 8,
+        textAlign: 'right',
     },
 
     mySkillsCount: {
@@ -45,6 +46,7 @@ export const styles = StyleSheet.create({
     mySkillsList: {
         width: '100%',
         height: '100%',
+        flex: 1,
     },
 
     buttonSkill: {
