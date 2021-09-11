@@ -13,27 +13,27 @@ Conheça o **[Ignite](https://rocketseat.com.br/ignite)** da [Rocketseat](https:
 Neste capítulo desenvolvemos um projeto simples de lista de skills. No qual compreendemos a estrutura de um projeto React Native com a CLI além de conhecer os principais conceitos por volta da bibliotera como componentes, propriedades, estado, imutabilidade, hooks, estilização do TypeScript. 
 
 ## Telas do App
-- Home do App
+#### Home do App
 ![Home do projeto](./prtScn/01.png)
 
 <br />
 
-- Listagem de skills
+#### Listagem de skills
 ![Skills adicionadas](./prtScn/02.png)
 
 <br />
 
-- Removendo skill da lista
+#### Removendo skill da lista
 ![Removendo skills](./prtScn/03.png)
 
 <br />
 
-- Verificando input vazio
+#### Verificando input vazio
 ![Teste campo vazio](./prtScn/04.png)
 
 <br />
 
-- Rolagem de página
+#### Rolagem de página
 ![Rolagem de página](./prtScn/05.png)
 
 ### Principais tecnologias usadas
