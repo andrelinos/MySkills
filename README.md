@@ -15,16 +15,24 @@ Neste capítulo desenvolvemos um projeto simples de lista de skills. No qual com
 ## Telas do App
 - Home do App
 ![Home do projeto](./prtScn/01.png)
+
 <br />
+
 - Listagem de skills
 ![Skills adicionadas](./prtScn/02.png)
+
 <br />
+
 - Removendo skill da lista
 ![Removendo skills](./prtScn/03.png)
+
 <br />
+
 - Verificando input vazio
 ![Teste campo vazio](./prtScn/04.png)
+
 <br />
+
 - Rolagem de página
 ![Rolagem de página](./prtScn/05.png)
 
