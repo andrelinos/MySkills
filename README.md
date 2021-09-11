@@ -7,7 +7,7 @@ _Ignite > Trilha React Native | Projeto desenvolvido nas aulas do Chapper I: Fun
 ---
 **Recomendado**:
 
-Conheça o **[Ignite](https://rocketseat.com.br/ignite)** da @Rocketseat com os melhores conteúdos e métodos para quem quer realmente aprender a aprender programação (#NeverStopLearning).
+Conheça o **[Ignite](https://rocketseat.com.br/ignite)** da [Rocketseat](https://github.com/Rocketseat) com os melhores conteúdos e métodos para quem quer realmente aprender a aprender programação (#NeverStopLearning).
 
 ---
 Neste capítulo desenvolvemos um projeto simples de lista de skills. No qual compreendemos a estrutura de um projeto React Native com a CLI além de conhecer os principais conceitos por volta da bibliotera como componentes, propriedades, estado, imutabilidade, hooks, estilização do TypeScript. 
