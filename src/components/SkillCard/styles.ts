@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     buttonSkill: {
-        backgroundColor: '#1f1e25',
-        padding: 16,
-        borderRadius: 8,
-        marginVertical: 8,
+        width: 250,
+        flexDirection: 'row',
+        alignItems: 'center',
+        flex: 1,
     },
 
     textSkill: {

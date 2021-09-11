@@ -58,4 +58,34 @@ export const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
     },
+
+    skillCardButtons: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        backgroundColor: '#1f1e25',
+        marginVertical: 8,
+        padding: 16,
+        borderRadius: 8,
+    },
+
+    buttonRemoveSkill: {
+        width: 20,
+        borderRadius: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    removeSkill: {
+        width: 20,
+        height: 20,
+        backgroundColor: '#ff7979',
+        color: '#fff',
+        borderRadius: 20,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        lineHeight: 28,
+        fontSize: 32,
+        marginLeft: 5,
+        padding: 0,
+    },
 });

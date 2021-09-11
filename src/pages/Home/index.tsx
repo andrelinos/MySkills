@@ -1,20 +1,43 @@
 import React, { useEffect, useState } from 'react';
 
-import { View, Text, SafeAreaView, TextInput, FlatList } from 'react-native';
+import {
+    View,
+    Text,
+    SafeAreaView,
+    TextInput,
+    FlatList,
+    TouchableOpacity,
+} from 'react-native';
 
 import { Button } from '../../components/Button';
 import { SkillCard } from '../../components/SkillCard';
 
 import { styles } from './styles';
 
+interface SkillData {
+    id: string;
+    name: string;
+}
+
 export function Home() {
     const [newSkill, setNewSkill] = useState('');
-    const [mySkills, setMySkills] = useState([]);
+    const [mySkills, setMySkills] = useState<SkillData[]>([]);
     const [greeting, setGreeting] = useState('');
 
     function handleAddNewSkill() {
-        setMySkills((oldSkills) => [...oldSkills, newSkill]);
+        const data = {
+            id: String(new Date().getTime()),
+            name: newSkill,
+        };
+
+        setMySkills((oldSkills) => [...oldSkills, data]);
         setNewSkill('');
+    }
+
+    function handleRemoveSkill(id: string) {
+        setMySkills((oldSkills) =>
+            oldSkills.filter((skill) => skill.id !== id),
+        );
     }
 
     useEffect(() => {
@@ -43,7 +66,7 @@ export function Home() {
                 value={newSkill}
             />
 
-            <Button onPress={handleAddNewSkill} />
+            <Button title="Add" onPress={handleAddNewSkill} />
 
             <View style={styles.mySkillsTitle}>
                 <Text style={styles.title}>My Skills</Text>
@@ -52,9 +75,18 @@ export function Home() {
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={mySkills}
-                keyExtractor={(item) => item}
+                keyExtractor={(item) => item.id}
                 style={styles.mySkillsList}
-                renderItem={({ item }) => <SkillCard skill={item} />}
+                renderItem={({ item }) => (
+                    <View style={styles.skillCardButtons}>
+                        <SkillCard skill={item.name} />
+                        <TouchableOpacity
+                            style={styles.buttonRemoveSkill}
+                            onPress={() => handleRemoveSkill(item.id)}>
+                            <Text style={styles.removeSkill}>-</Text>
+                        </TouchableOpacity>
+                    </View>
+                )}
             />
         </SafeAreaView>
     );
