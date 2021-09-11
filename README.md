@@ -2,7 +2,7 @@
 
 **Info**
 
-_Ignite > Trilha React Native | Projeto desenvolvido nas aulas do Chapper I: Fundamentos React Native._
+_Ignite > Trilha React Native | Projeto desenvolvido nas aulas do Chapter I: Fundamentos React Native._
 
 ---
 **Recomendado**:
