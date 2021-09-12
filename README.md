@@ -53,9 +53,13 @@ $ cd ~\www\projetos
 ```
 3. Estando dentro da página, clone o projeto usando o GIT:
 ```bash
-$ git clone https://github.com/andrelinos/MySkills.git
+$ git clone https://github.com/andrelinos/MySkills.git myskills
 
-$ cd MySkills
+# Entrando na pasta do projeto
+$ cd myskills
+
+# Editando o projeto com o vscode
+$ code .
 ```
 4. Pronto, neste passo você já terá o projeto em sua mágina e pronto para você testar. 
 
