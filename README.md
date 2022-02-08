@@ -1,124 +1,98 @@
-# MySkills
+<div align="center" id="top"> 
+  <img src="./.github/app.gif" alt="Myskills" />
 
-**Info**
+  &#xa0;
 
-_Ignite > Trilha React Native | Projeto desenvolvido nas aulas do Chapter I: Fundamentos React Native._
+  <!-- <a href="https://myskills.netlify.app">Demo</a> -->
+</div>
 
----
-**Recomendado**:
+<h1 align="center">Myskills</h1>
 
-Conheça o **[Ignite](https://rocketseat.com.br/ignite)** da [Rocketseat](https://github.com/Rocketseat) com os melhores conteúdos e métodos para quem quer realmente aprender a aprender programação (#NeverStopLearning).
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8">
 
----
-Neste capítulo desenvolvemos um projeto simples de lista de skills. No qual compreendemos a estrutura de um projeto React Native com a CLI além de conhecer os principais conceitos por volta da bibliotera como componentes, propriedades, estado, imutabilidade, hooks, estilização do TypeScript.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8">
 
-## Telas do App
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8">
 
-### Home do App
+  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8">
 
-![Home do projeto](./prtScn/01.png)  
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8" /> -->
 
-### Listagem de skills
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8" /> -->
 
-![Skills adicionadas](./prtScn/02.png)  
-
-### Removendo skill da lista
-
-![Removendo skills](./prtScn/03.png)  
-
-### Verificando input vazio
-
-![Teste campo vazio](./prtScn/04.png)  
-
-### Rolagem de página
-
-![Rolagem de página](./prtScn/05.png)
-
-### Principais tecnologias usadas
-
-- [React](https://reactjs.org)
-- [React Native](https://reactnative.dev)
-- [TypeScript](https://www.typescriptlang.org)
-
-**debug**
-
-- [Flipper](https://fbflipper.com)
-
-## Como baixar o App para sua máquina
-
-1. Acesso terminal do seu sistema operacional (Windows, Linux, Mac).
-2. Acesse a pasta de seus projetos
-
-```bash
-# Exemplo
-$ cd ~\www\projetos
-```
-
-3. Estando dentro da página, clone o projeto usando o GIT:
-
-```bash
-$ git clone https://github.com/andrelinos/MySkills.git myskills
-
-# Entrando na pasta do projeto
-$ cd myskills
-
-# Editando o projeto com o vscode
-$ code .
-```
-
-4. Pronto, neste passo você já terá o projeto em sua mágina e pronto para você testar.
-
-## Como rodar o App
-
-Para o rodar o App é bem simples. Bastanto apenas executar os seguintes comandos abaixo:
-
-```bash
-$ yarn start # Necessário para iniciar o App
-
-$ yarn android  # Necessário para executar o App 
-                # no seu emulador ou dispositivo físico.
-```
-
-**Notas**:
-
-1. Se você não tiver ou não quiser usar o ``yarn``, pode usar também os ``npm run start`` ou ``npm run android``, que vai funcionar da mesma forma.
-2. Sempre é voce executar primeiro o comando para iniciar a aplicação e depois rodar no emulador.
-
-**Nota**: Necessário vocêr ter um emulador Android eu seu computador ou um emulador iOS em seu Mac.
-<br />
-
----
-<br />
-
-## Autor
-
-<a href="https://app.rocketseat.com.br/me/andrelinosilva">
-<kbd>
-  <img height="150" width="150"
-    src="https://github.com/andrelinos.png"
-    alt="Avatar do autor" />
-</kbd>
-<br /><b>
-Andrelino Silva 🚀</b></a>
-
-<p>
-    Sou apaixonado por tecnologias e quero muito criar coisas grandes e de ajudar as pessoas. Estou na luta para estudar e conciliar família, estudos, trabalho.
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/myskills?color=56BEB8" /> -->
 </p>
 
-  | Rede social | Saiba mais                                                                                          |
-  | ----------- | --------------------------------------------------------------------------------------------------- |
-  | GitHub      | [https://github.com/andrelinos](https://github.com/andrelinos)                                      |
-  | Linkedin    | [https://linkedin.com// in/andrelinosilva](https://linkedin.com/in/andrelinosilva)                  |
-  | Twitter     | [https://twitter.com/ _andrelinosilva](https://twitter.com/_andrelinosilva)                         |
-  | Facebook    | [https://facebook.com/ andrelinossilva](https://facebook.com/andrelinossilva/)                      |
-  | Instagram   | [https://instagram.com/andrelinossilva](https://instagram.com/andrelinossilva/)                     |
-  | Youtube     | [https://youtube.com/ c/AndrelinoSilvas](https://youtube.com/c/AndrelinoSilvas/)                    |
-  | Rocketseat  | [https://app.rocketseat.com.br/ me/andrelinosilva](https://app.rocketseat.com.br/me/andrelinosilva) |
+<!-- Status -->
 
-</div>
-</div>
-</div>
+<!-- <h4 align="center"> 
+	🚧  Myskills 🚀 Under construction...  🚧
+</h4> 
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+</p>
+
 <br>
 
----
-<p align="center">Made with 💜 by Andrelino Silva</p>
+## :dart: About ##
+
+Describe your project
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/myskills
+
+# Access
+$ cd myskills
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn start
+
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License ##
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+
+Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
