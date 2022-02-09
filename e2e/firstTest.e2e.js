@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-describe('Meus primeiros testes', () => {
+describe('Home Screen', () => {
     beforeAll(async () => {
         await device.launchApp();
     });
@@ -16,10 +16,22 @@ describe('Meus primeiros testes', () => {
     it('check register a new skill', async () => {
         const inputNewSkill = await element(by.id('input-new-skill'));
         const buttonAdd = await element(by.id('button-add'));
+        const flatListSkills = await element(by.id('flat-list-skills'));
 
         await inputNewSkill.tap();
         await inputNewSkill.typeText('React Native');
 
         await buttonAdd.tap();
+
+        await flatListSkills.tap();
+
+        await inputNewSkill.tap();
+        await inputNewSkill.typeText('React JS');
+
+        await buttonAdd.tap();
+
+        await flatListSkills.tap();
+
+        expect(flatListSkills).toBeVisible();
     });
 });

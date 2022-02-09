@@ -113,24 +113,28 @@ export function Home() {
                 <Text style={styles.title}>My Skills</Text>
                 <Text style={styles.mySkillsCount}>({mySkills.length})</Text>
             </View>
-            <FlatList
-                showsVerticalScrollIndicator={false}
-                data={mySkills}
-                keyExtractor={(item) => item.id}
-                style={styles.mySkillsList}
-                renderItem={({ item }) => (
-                    <View style={styles.skillCardButtons}>
-                        <SkillCard skill={item.name} />
-                        <TouchableOpacity
-                            style={styles.buttonRemoveSkill}
-                            onPress={() =>
-                                handleRemoveSkill(item.id, item.name)
-                            }>
-                            <Text style={styles.removeSkill}>-</Text>
-                        </TouchableOpacity>
-                    </View>
-                )}
-            />
+            {mySkills && (
+                <FlatList
+                    testID="flat-list-skills"
+                    showsVerticalScrollIndicator={false}
+                    data={mySkills}
+                    keyExtractor={(item) => item.id}
+                    keyboardShouldPersistTaps="never"
+                    style={styles.mySkillsList}
+                    renderItem={({ item }) => (
+                        <View style={styles.skillCardButtons}>
+                            <SkillCard skill={item.name} />
+                            <TouchableOpacity
+                                style={styles.buttonRemoveSkill}
+                                onPress={() =>
+                                    handleRemoveSkill(item.id, item.name)
+                                }>
+                                <Text style={styles.removeSkill}>-</Text>
+                            </TouchableOpacity>
+                        </View>
+                    )}
+                />
+            )}
         </SafeAreaView>
     );
 }
