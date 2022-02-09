@@ -88,10 +88,13 @@ export function Home() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text style={styles.title}>Welcome, Andrelino</Text>
+            <Text testID="welcome" style={styles.title}>
+                Welcome, Andrelino
+            </Text>
             <Text style={styles.greeting}>{greeting}</Text>
 
             <TextInput
+                testID="input-new-skill"
                 style={styles.input}
                 placeholder="New skill"
                 placeholderTextColor="#555"
@@ -100,7 +103,11 @@ export function Home() {
                 value={newSkill}
             />
 
-            <Button title="Add" onPress={handleAddNewSkill} />
+            <Button
+                testID="button-add"
+                title="Add"
+                onPress={handleAddNewSkill}
+            />
 
             <View style={styles.mySkillsTitle}>
                 <Text style={styles.title}>My Skills</Text>
